@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuzLab - QRCode</title>
+    <link rel="shortcut icon" href="assets/uploads/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="/" class="head">
+            <h1>QRCode</h1>
+            <h1>Generator</h1>
+        </a>
+        <div class="form-container">
+            <form class="form-container" method="post" id="qrCodeForm">
+                <div class="form-element">
+                    <span>Text</span>
+                    <input class="form-text-input" type="text" name="qrContent" id="qrContent" placeholder="..." />
+                </div>
+                <div class="form-between form-element">
+                    <div class="form-element-item">
+                        <label for="backgroundColor">Background Color</label>
+                        <input type="color" id="backgroundColor" value="#ffffff">
+                    </div>
+                    <div class="form-element-item">
+                        <label for="qrColor">QR Color</label>
+                        <input type="color" id="qrColor" value="#000000">
+                    </div>
+                </div>
+                <div id="qrCodeContainer" style="position: relative;">
+                    <div id="qrCodeImage" style="display: none;"></div>
+                </div>
+                <button id="downloadQRCode" style="display: none">Download</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <a target="_blank" href="https://www.instagram.com/berkayhuz"><ion-icon
+                    name="logo-instagram"></ion-icon></a>
+            <a target="_blank" href="https://www.x.com/berkayhuz"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a target="_blank" href="https://www.github.com/berkayhuz"><ion-icon name="logo-github"></ion-icon></a>
+            <a target="_blank" href="https://www.linkedin.com/in/berkayhuz"><ion-icon
+                    name="logo-linkedin"></ion-icon></a>
+        </div>
+    </div>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/qrcoder.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
